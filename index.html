@@ -51,7 +51,35 @@
         padding: 20px;
         font-size: 14px;
         opacity: 0.7;
+/* Animation */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    animation: fadeUp 1s ease forwards;
+}
+
+.card {
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.card:nth-child(3) { animation-delay: 0.9s; }
+
+html {
+    scroll-behavior: smooth;
+}}
 </style></head>
 <body>
 
@@ -62,19 +90,30 @@
 </div>
 
 <div class="section">
-    <h2>My Services</h2>
+    <h2>My Projects</h2>
 
-    <div class="card">
-        <h3>AI Content Automation</h3>
-        <p>Automatic content generation & posting system.</p>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Instagram AI Auto Poster</h3>
+            <p>Generates captions, designs posts and schedules automatically.</p>
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+        </div>
+
+        <div class="card">
+            <h3>YouTube Script Generator</h3>
+            <p>AI tool that creates viral scripts in seconds.</p>
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+        </div>
+
+        <div class="card">
+            <h3>E-commerce AI Chatbot</h3>
+            <p>Automated chatbot that increases sales and handles support.</p>
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a">
+        </div>
+
     </div>
-
-    <div class="card">
-        <h3>Prompt Engineering</h3>
-        <p>High converting prompts for marketing.</p>
-    </div>
-
-</div>
+</div></div>
 <div class="section">
     <h2>What Clients Say</h2>
 
